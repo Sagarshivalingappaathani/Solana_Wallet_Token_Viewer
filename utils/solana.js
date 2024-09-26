@@ -34,6 +34,7 @@ export const getTokenAccounts = async (walletAddress) => {
     console.error("Invalid wallet address:", error);
     return [];
   }
+  
 
   const tokenAccountsResults = [];
 
