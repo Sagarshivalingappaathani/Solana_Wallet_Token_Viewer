@@ -1,7 +1,5 @@
-// utils/solana.js
 import { Connection, PublicKey } from '@solana/web3.js';
 
-// Solana network (use devnet for testing or mainnet for production)
 const SOLANA_NETWORK = 'https://api.devnet.solana.com';
 
 // Token program IDs
@@ -10,14 +8,14 @@ const TOKEN_PROGRAM_IDS = [
   'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA', // Official SPL token program ID
 ];
 
-// Connect to user's wallet (e.g., Phantom)
+// Connect to user's wallet 
 export const connectWallet = async () => {
   try {
-    const provider = window.solana; // Assuming Phantom or compatible wallet
+    const provider = window.solana; 
     if (provider && provider.isPhantom) {
       await provider.connect();
       console.log('Connected to wallet:', provider.publicKey.toString());
-      return provider.publicKey.toString(); // Return the wallet address (public key)
+      return provider.publicKey.toString(); 
     } else {
       alert('Please install a Solana wallet (e.g., Phantom).');
     }
@@ -45,7 +43,7 @@ export const getTokenAccounts = async (walletAddress) => {
         const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
           publicKey,
           {
-            programId: new PublicKey(programId), // Ensure this is a valid base58 string
+            programId: new PublicKey(programId), 
           }
         );
         
