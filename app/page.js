@@ -8,6 +8,9 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-6">
           Your Solana Wallet All Tokens
         </h1>
+        <p className="text-center text-red-500 font-semibold mb-4">
+          This application works on Solana Devnet only.
+        </p>
         <WalletTokens />
       </div>
     </div>
