@@ -4,7 +4,7 @@ const SOLANA_NETWORK = 'https://api.devnet.solana.com';
 
 // Token program IDs
 const TOKEN_PROGRAM_IDS = [
-  'TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb', // Custom SPL token program ID
+  'TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb', // token program-22
   'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA', // Official SPL token program ID
 ];
 
